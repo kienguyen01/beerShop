@@ -37,7 +37,6 @@ public class BeerController {
 
     }
 
-    //Not working rn TODO
     @RequestMapping(value = "", method = RequestMethod.DELETE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<List<Beer>> deleteBeer(@RequestBody Beer beer){
         service.deleteBeer(beer);
